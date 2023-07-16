@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient toutes les déclarations @font-face, le cas échéant.
 // -----------------------------------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $black;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $grey;
+  font-style: normal;
+}

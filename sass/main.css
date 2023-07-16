@@ -2,6 +2,7 @@
 /**
  * Configurer un modèle de boîte décent sur l'élément racine
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -21,6 +22,22 @@ html {
 /**
  * Styles de base pour les liens
  */
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #101010;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #353535;
+  font-style: normal;
+}
+
 /**
  * Style de typographie de base pour copier du texte
  */
