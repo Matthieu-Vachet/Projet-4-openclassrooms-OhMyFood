@@ -38,6 +38,14 @@ h2 {
   font-style: normal;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.12rem;
+  color: #353535;
+  font-style: normal;
+}
+
 /**
  * Style de typographie de base pour copier du texte
  */

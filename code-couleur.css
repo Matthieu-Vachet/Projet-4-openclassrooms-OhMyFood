@@ -10,9 +10,24 @@ img {
 body {
   color: #eff306;
 }
+main {
+  color: #000000;
+}
 div {
   color: #d909fb;
 }
+h1 {
+  color: #734704;
+}
 h2 {
   color: #3bc362;
+}
+section {
+  color: #ff79da;
+}
+p {
+  color: #27dada;
+}
+button {
+  color: #0e95f6;
 }
