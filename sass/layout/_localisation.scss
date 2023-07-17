@@ -1,0 +1,15 @@
+.localisation {
+    background-color: $background-localisation;
+
+    @include flex-align-justify-center;
+
+    width: 100%;
+    height: 50px;
+
+    gap:17px;
+
+    img{
+        width: 12px;
+        height: 16px;
+    }
+}
