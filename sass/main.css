@@ -60,7 +60,7 @@ table {
   border-spacing: 0;
 }
 
-.navbar {
+header .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ table {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-.navbar img {
+header .navbar img {
   width: 197px;
   height: 36px;
 }
