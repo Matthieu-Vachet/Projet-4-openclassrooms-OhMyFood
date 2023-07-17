@@ -1,21 +1,19 @@
-
-
 .localisation {
-    background-color: $background-localisation;
+  background-color: $background-localisation;
 
-    @include flex-align-justify-center;
+  @include flex-align-justify-center;
 
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 
-    gap:17px;
+  gap: 17px;
 
-    img{
-        width: 12px;
-        height: 16px;
-    }
+  img {
+    width: 12px;
+    height: 16px;
+  }
 
-    h2{
-        @include fontRoboto500 (1rem, $grey);
-    }
+  h2 {
+    @include fontRoboto500(1rem, $grey);
+  }
 }
