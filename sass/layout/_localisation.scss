@@ -1,3 +1,5 @@
+
+
 .localisation {
     background-color: $background-localisation;
 
@@ -11,5 +13,9 @@
     img{
         width: 12px;
         height: 16px;
+    }
+
+    h2{
+        @include fontRoboto500 (1rem, $grey);
     }
 }
