@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous les mixins Sass.
+// -----------------------------------------------------------------------------
+
+
+@mixin fontRoboto ($size, $weight, $color, $style: normal, $family: "Roboto, sans-serif") {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    font-style: $style;
+    font-family: $family;
+}
+
+@mixin fontShrikhand ($size, $weight, $color, $style: normal, $family: "Shrikhand, sans-serif") {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    font-style: $style;
+    font-family: $family;
+}

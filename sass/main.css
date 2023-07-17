@@ -57,7 +57,7 @@ h4 {
   font-style: normal;
 }
 
-.footer-title {
+h5 {
   font-family: "shrikhand", sans-serif;
   font-weight: 400;
   font-size: 1.12rem;
@@ -65,13 +65,22 @@ h4 {
   font-style: normal;
 }
 
-/**
- * Style de typographie de base pour copier du texte
- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+.title-restaurant {
+  font-family: "shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: #101010;
+  font-style: normal;
+}
+
+.title-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #101010;
+  font-style: normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -93,7 +102,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
