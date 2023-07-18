@@ -1,0 +1,7 @@
+@mixin button-gradient {
+    background: linear-gradient(to top, $primary 0%, $secondaire 100%);
+}
+
+@mixin button-gradient-hover {
+    background: linear-gradient(to top, $lighten-primaire 0%, $lighten-secondaire 100%);
+}

@@ -4,7 +4,8 @@
 @import
   './utils/variables',
   './utils/mixins-fonts',
-  './utils/mixins-flex';
+  './utils/mixins-flex',
+  './utils/mixins-gradient';
 // 3. Trucs de base
 @import
   './base/base',
@@ -15,7 +16,8 @@
 @import
   './layout/header',
   './layout/footer',
-  './layout/localisation';
+  './layout/localisation',
+  './layout/explore';
 
 // 5. Composants
 @import

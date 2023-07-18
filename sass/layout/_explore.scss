@@ -1,0 +1,24 @@
+.explore {
+  background-color: $background;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  h1 {
+    @include fontRoboto700(1.5rem, $black);
+    text-align: center;
+    padding: 39px 58px 20px 42px;
+  }
+
+  p {
+    @include fontRoboto300(1.12rem, $grey);
+    text-align: center;
+  }
+
+  .btn-radient {
+    margin: 27px 0 57px 0;
+  }
+}
