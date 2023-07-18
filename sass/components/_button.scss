@@ -2,6 +2,8 @@
 // Ce fichier contient tous les styles liés au composant de bouton.
 // -----------------------------------------------------------------------------
 
+// button Couleur Radient
+
 .btn-radient {
   @include fontRoboto500(1rem, $white);
   @include button-gradient;
@@ -15,9 +17,54 @@
 
   &:hover {
     @include button-gradient-hover;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
   }
+}
 
-  
+// Card fonctionnement
+
+.btn-tuto {
+  background: $background;
+  width: 322px;
+  height: 72px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  border: none;
+
+  box-shadow: $shadow-function-btn;
+
+  .badge-tuto {
+    @include fontRoboto500(0.88rem, $background);
+    background: $primary;
+
+    height: 24px;
+    width: 24px;
+
+    @include flex-align-justify-center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+  }
+
+  .tuto-content {
+    width: 100%;
+    @include flex-start;
+
+    padding-left: 33.5px;
+
+    .icons-tuto {
+      padding-right: 27px;
+    }
+
+    .text-tuto {
+      @include fontRoboto500(1rem, $black);
+    }
+  }
 }
