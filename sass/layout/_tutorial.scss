@@ -1,0 +1,16 @@
+.tutorial {
+    @include flex-column;
+
+    .tuto-title{
+        @include fontRoboto700(1.5rem, $black);
+
+        padding: 48px 80px 26px 20px;
+    }
+
+    .tuto-liste {
+        @include flex-column-center;
+        width: 100%;
+
+        gap: 25px;
+    }
+}
