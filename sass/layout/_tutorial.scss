@@ -1,5 +1,7 @@
 .tutorial {
     @include flex-column;
+    
+    width: 100%;
 
     .tuto-title{
         @include fontRoboto700(1.5rem, $black);
@@ -12,5 +14,7 @@
         width: 100%;
 
         gap: 25px;
+
+        margin-bottom: 68px;
     }
 }

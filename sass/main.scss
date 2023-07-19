@@ -18,11 +18,13 @@
   './layout/footer',
   './layout/localisation',
   './layout/explore',
-  './layout/tutorial';
+  './layout/tutorial',
+  './layout/restaurants';
 
 // 5. Composants
 @import
-  './components/button';
+  './components/button',
+  './components/card';
 
 // 6. Styles spécifiques à la page
 @import

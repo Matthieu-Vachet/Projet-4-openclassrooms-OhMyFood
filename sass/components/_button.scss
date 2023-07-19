@@ -66,3 +66,29 @@
     }
   }
 }
+
+.btn-news {
+  @include fontRoboto500(0.87rem, $green-font);
+  @include flex-align-justify-center;
+  background: $green;
+
+  width: 80px;
+  height: 29px;
+
+  position: relative;
+  top: -186px;
+  left: 242px;
+
+  border-radius: 2px;
+  border: none;
+  box-shadow: $shadow-header;
+}
+
+.btn-like {
+
+  position: relative;
+  top: -30px;
+  left: 281px;
+  cursor: pointer;
+
+}
