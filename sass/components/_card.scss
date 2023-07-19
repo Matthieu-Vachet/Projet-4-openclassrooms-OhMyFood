@@ -11,6 +11,12 @@
 
   box-shadow: $shadow-card-restaurant;
 
+  transition: box-shadow 0.8s ease;
+
+  &:hover {
+    box-shadow: $shadow-card-hover;
+  }
+
   a {
     width: 100%;
     text-decoration: none;
@@ -33,6 +39,7 @@
     border-radius: 0 0 15px 15px;
 
     margin-left: 13px;
+
 
     .card-title {
       @include fontRoboto700(1.12rem, $black);
