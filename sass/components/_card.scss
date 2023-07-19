@@ -2,13 +2,11 @@
   background: $white;
   @include flex-column-center;
 
-
   width: 340px;
   height: auto;
   border-radius: 15px;
 
   box-shadow: $shadow-card-restaurant;
-
   transition: box-shadow 0.8s ease;
 
   &:hover {
@@ -21,7 +19,6 @@
   }
 
   .card-img {
-    
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -34,9 +31,7 @@
     @include flex-space-between;
 
     border-radius: 0 0 15px 15px;
-
     margin-left: 13px;
-
 
     .card-title {
       @include fontRoboto700(1.12rem, $black);
