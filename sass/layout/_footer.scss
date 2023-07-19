@@ -1,3 +1,35 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient tous les styles liés au pied de page du site/de l'application.
 // -----------------------------------------------------------------------------
+
+footer {
+  background-color: $background-footer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 22px 25px;
+
+  gap: 16px;
+
+  h1 {
+    @include fontShrikhand400(1.12rem, $white);
+  }
+  li {
+    padding-bottom: 7px;
+
+    img {
+        padding-right: 10px;
+    }
+
+  }
+}
+
+.icone {
+  @include fontRoboto500(1rem, $white);
+}
+
+.no-icone {
+  @include fontRoboto400(1rem, $white);
+}

@@ -79,6 +79,44 @@ header .navbar img {
   height: 36px;
 }
 
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 22px 25px;
+  gap: 16px;
+}
+footer h1 {
+  font-size: 1.12rem;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Shrikhand";
+}
+footer li {
+  padding-bottom: 7px;
+}
+footer li img {
+  padding-right: 10px;
+}
+
+.icone {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto";
+}
+
+.no-icone {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+}
+
 main .localisation {
   background-color: #eaeaea;
   display: flex;
