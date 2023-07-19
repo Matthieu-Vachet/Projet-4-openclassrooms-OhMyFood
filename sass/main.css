@@ -174,8 +174,6 @@ header .navbar img {
   width: 322px;
   height: 72px;
   position: relative;
-  display: flex;
-  align-items: center;
   border-radius: 20px;
   border: none;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
