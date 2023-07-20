@@ -67,6 +67,7 @@
   }
 }
 
+// Button News
 .btn-news {
   @include fontRoboto500(0.87rem, $green-font);
   @include flex-align-justify-center;
@@ -84,6 +85,9 @@
   box-shadow: $shadow-header;
 }
 
+
+
+// Boutton Like (coeur)
 .btn-like {
   background: none;
   border: none;
