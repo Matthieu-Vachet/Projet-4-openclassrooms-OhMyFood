@@ -304,7 +304,6 @@ main .localisation h2 {
 }
 .btn-like svg {
   color: #101010;
-  fill: url(#gradient);
   fill-opacity: 0;
   stroke: #101010;
   height: 30px;
@@ -330,6 +329,22 @@ main .localisation h2 {
     transform: scale(1.1);
   }
 }
+.btn-like-1 svg {
+  fill: url(#gradient);
+}
+
+.btn-like-2 svg {
+  fill: url(#gradient2);
+}
+
+.btn-like-3 svg {
+  fill: url(#gradient3);
+}
+
+.btn-like-4 svg {
+  fill: url(#gradient4);
+}
+
 .card {
   background: #fff;
   display: flex;

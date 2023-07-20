@@ -98,7 +98,6 @@
 
   svg {
     color: $black;
-    fill: url(#gradient);
     fill-opacity: 0;
     stroke: $black;
     height: 30px;
@@ -112,3 +111,19 @@
 }
 
 @include heart-frame;
+
+.btn-like-1 svg {
+  fill: url(#gradient);
+}
+
+.btn-like-2 svg {
+  fill: url(#gradient2);
+}
+
+.btn-like-3 svg {
+  fill: url(#gradient3);
+}
+
+.btn-like-4 svg {
+  fill: url(#gradient4);
+}
