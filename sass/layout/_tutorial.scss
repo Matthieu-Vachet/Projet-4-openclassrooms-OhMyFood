@@ -1,20 +1,20 @@
 .tutorial {
-    @include flex-column;
-    
+  @include flex-column;
+
+  width: 100%;
+
+  .tuto-title {
+    @include fontRoboto700(1.5rem, $black);
+
+    padding: 48px 80px 26px 20px;
+  }
+
+  .tuto-liste {
+    @include flex-column-center;
     width: 100%;
 
-    .tuto-title{
-        @include fontRoboto700(1.5rem, $black);
+    gap: 25px;
 
-        padding: 48px 80px 26px 20px;
-    }
-
-    .tuto-liste {
-        @include flex-column-center;
-        width: 100%;
-
-        gap: 25px;
-
-        margin-bottom: 68px;
-    }
+    margin-bottom: 68px;
+  }
 }

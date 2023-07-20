@@ -20,7 +20,6 @@ $black: #101010;
 $white: #fff;
 $grey: #353535;
 
-
 // Lightens
 
 $lighten-primaire: lighten($primary, 10%);
@@ -30,5 +29,5 @@ $lighten-secondaire: lighten($secondaire, 10%);
 
 $shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $shadow-function-btn: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-$shadow-card-restaurant: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-$shadow-card-hover: 0px 8px 30px 0px rgba(0, 0, 0, 0.30);
+$shadow-card-restaurant: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+$shadow-card-hover: 0px 8px 30px 0px rgba(0, 0, 0, 0.3);

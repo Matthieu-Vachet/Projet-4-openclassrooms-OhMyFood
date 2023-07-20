@@ -5,11 +5,10 @@
 
   .restaurant-title {
     @include fontRoboto700(1.5rem, $black);
-  
-    padding: 48px 80px 26px 20px;
 
+    padding: 48px 80px 26px 20px;
   }
-  
+
   .restaurant-list {
     @include flex-column-center;
 
@@ -17,6 +16,4 @@
 
     padding-bottom: 66px;
   }
-
-  
 }
