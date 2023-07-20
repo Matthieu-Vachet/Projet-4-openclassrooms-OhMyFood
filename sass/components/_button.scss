@@ -85,10 +85,29 @@
 }
 
 .btn-like {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 21px;
 
   position: relative;
-  top: -30px;
+  top: -44px;
   left: 281px;
   cursor: pointer;
 
+  svg {
+    color: $black;
+    fill: url(#gradient);
+    fill-opacity: 0;
+    stroke: $black;
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+      
+      animation: fill-svg 1s forwards;
+    }
+  }
 }
+
+@include heart-frame;

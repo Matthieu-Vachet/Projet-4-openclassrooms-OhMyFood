@@ -293,12 +293,43 @@ main .localisation h2 {
 }
 
 .btn-like {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 21px;
   position: relative;
-  top: -30px;
+  top: -44px;
   left: 281px;
   cursor: pointer;
 }
+.btn-like svg {
+  color: #101010;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke: #101010;
+  height: 30px;
+  width: 30px;
+}
+.btn-like svg:hover {
+  animation: fill-svg 1s forwards;
+}
 
+@keyframes fill-svg {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+  }
+  50% {
+    fill-opacity: 0.5;
+    stroke-opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    transform: scale(1.1);
+  }
+}
 .card {
   background: #fff;
   display: flex;
@@ -308,7 +339,7 @@ main .localisation h2 {
   height: auto;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.8s ease;
+  transition: box-shadow 0.5s ease;
 }
 .card:hover {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.3);
