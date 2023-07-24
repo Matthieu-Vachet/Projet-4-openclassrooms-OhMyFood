@@ -9,6 +9,10 @@
     @include fontRoboto700(1.5rem, $black);
     text-align: center;
     padding: 39px 58px 20px 42px;
+
+    @include desktop-large {
+      @include fontRoboto700(2.5rem, $black);
+    }
   }
 
   p {
@@ -17,6 +21,6 @@
   }
 
   .btn-radient {
-    margin: 27px 0 57px 0;
+    margin: 27px 0 30px 0;
   }
 }
