@@ -270,6 +270,11 @@ main .localisation h2 {
   font-family: "Roboto";
   padding: 48px 80px 26px 20px;
 }
+@media screen and (min-width: 1440px) {
+  .tutorial .tuto-title {
+    padding: 50px 180px 25px 195px;
+  }
+}
 .tutorial .tuto-liste {
   display: flex;
   flex-direction: column;
@@ -277,6 +282,14 @@ main .localisation h2 {
   width: 100%;
   gap: 25px;
   margin-bottom: 68px;
+}
+@media screen and (min-width: 1440px) {
+  .tutorial .tuto-liste {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 180px 50px 205px;
+  }
 }
 
 #restaurant {
