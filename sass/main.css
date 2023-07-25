@@ -664,4 +664,11 @@ main .localisation h2 {
 .navbar-page .navbar-logo .logo {
   width: 197px;
   height: 36px;
+}
+
+.image-menu img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
