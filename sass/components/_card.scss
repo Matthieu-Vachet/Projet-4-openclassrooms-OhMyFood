@@ -65,3 +65,16 @@
     }
   }
 }
+
+.cards-menu {
+  background-color: $white;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px;
+
+  box-shadow: $shadow-function-btn;
+
+  h3 {
+    @include fontRoboto500(1.12rem, $black);
+  }
+}

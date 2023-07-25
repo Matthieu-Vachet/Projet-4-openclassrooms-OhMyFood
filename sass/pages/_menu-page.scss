@@ -7,24 +7,49 @@
   }
 }
 
-.menu {
-  @include flex-space-between;
-  width: 100%;
-  background-color: $background;
+.container {
 
-  border-radius: 40px 40px 0 0;
-  padding: 32px 17px 40px 17px;
+  .menu {
+    @include flex-space-between;
+    width: 100%;
+    background-color: $background;
 
-  position: absolute;
-  top: 300px;
+    border-radius: 40px 40px 0 0;
+    padding: 32px 17px 40px 17px;
 
-  &-title {
-    h2 {
-      @include fontShrikhand400(1.75rem, $black);
+    position: absolute;
+    top: 300px;
+
+    &-title {
+      h2 {
+        @include fontShrikhand400(1.75rem, $black);
+      }
+    }
+
+    .btn-like-menu {
+      margin-right: 24px;
     }
   }
+}
 
-  .btn-like-menu {
-    margin-right: 24px;
+.entree-menu {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+
+  h2 {
+    @include fontRoboto300(1rem, $black);
+    text-transform: uppercase;
+    border-bottom: 3px solid $green;
+    width: 40px;
+    padding-bottom: 5px;
+  }
+
+  .menu-list {
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
