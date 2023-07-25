@@ -13,6 +13,11 @@ footer {
 
   gap: 16px;
 
+  @include tablette {
+    display: flex;
+    align-items: center;
+  }
+
   @include desktop-large {
     @include flex-row-reverse-end;
 
@@ -29,6 +34,15 @@ footer {
   }
 
   .footer-liste {
+
+    @include tablette {
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+
     @include desktop-large {
       display: flex;
       flex-direction: row;

@@ -173,6 +173,12 @@ footer {
   padding: 22px 25px;
   gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   footer {
     display: flex;
@@ -192,6 +198,15 @@ footer h1 {
 @media screen and (min-width: 1440px) {
   footer h1 {
     padding: 30px 25px 15px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
 }
 @media screen and (min-width: 1440px) {
