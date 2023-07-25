@@ -27,21 +27,32 @@ footer {
       padding: 30px 25px 15px 0;
     }
   }
-  li {
-    padding-bottom: 7px;
 
+  .footer-liste {
     @include desktop-large {
-      padding-bottom: 0;
+      display: flex;
+      flex-direction: row;
+
+      padding: 30px 25px 15px 180px;
+      gap: 15px;
     }
 
-    &:nth-child(2) {
+    li {
+      padding-bottom: 7px;
+
       @include desktop-large {
-        padding-right: 50px;
+        padding-bottom: 0;
       }
-    }
 
-    img {
-      padding-right: 10px;
+      &:nth-child(2) {
+        @include desktop-large {
+          padding-right: 50px;
+        }
+      }
+
+      img {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -52,14 +63,4 @@ footer {
 
 .no-icone {
   @include fontRoboto400(1rem, $white);
-}
-
-.footer-liste {
-  @include desktop-large {
-    display: flex;
-    flex-direction: row;
-
-    padding: 30px 25px 15px 180px;
-    gap: 15px;
-  }
 }
