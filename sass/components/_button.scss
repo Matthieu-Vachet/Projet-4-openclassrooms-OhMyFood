@@ -36,6 +36,10 @@
 
   box-shadow: $shadow-function-btn;
 
+  @include tablette {
+    width: 300px;
+  }
+
   .badge-tuto {
     @include fontRoboto500(0.88rem, $background);
     background: $primary;

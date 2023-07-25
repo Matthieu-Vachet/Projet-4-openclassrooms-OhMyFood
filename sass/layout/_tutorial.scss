@@ -16,10 +16,14 @@
   .tuto-liste {
     @include flex-column-center;
     width: 100%;
-
     gap: 25px;
-
     margin-bottom: 68px;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 
     @include desktop-large {
       width: 100%;
