@@ -1,9 +1,3 @@
-@mixin mobile-large {
-  @media screen and (min-width: map-get($breakpoint, mobile-large)) {
-    @content;
-  }
-}
-
 @mixin tablette {
   @media screen and (min-width: map-get($breakpoint, tablette)) {
     @content;
