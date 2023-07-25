@@ -88,6 +88,10 @@
   border: none;
   box-shadow: $shadow-header;
 
+  @include desktop {
+    left: 165px;
+  }
+
   @include desktop-large {
     left: 194px;
   }
@@ -104,6 +108,12 @@
   top: -44px;
   left: 281px;
   cursor: pointer;
+
+  @include desktop {
+    top: -44px;
+    left: 390px;
+
+  }
 
   @include desktop-large {
     top: -44px;

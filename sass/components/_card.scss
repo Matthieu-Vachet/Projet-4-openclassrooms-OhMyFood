@@ -13,6 +13,11 @@
     box-shadow: $shadow-card-hover;
   }
 
+  @include desktop {
+    width: 450px;
+    height: auto;
+  }
+
   @include desktop-large {
     height: auto;
     width: 498px;
@@ -29,6 +34,10 @@
     object-fit: cover;
     top: 50px;
     border-radius: 15px 15px 0 0;
+
+    @include desktop {
+      widht: 450px;
+    }
 
     @include desktop-large {
       width: 498px;

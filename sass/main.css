@@ -376,8 +376,12 @@ main .localisation h2 {
   gap: 18px;
   padding-bottom: 66px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   #restaurant .restaurant-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 60px;
   }
 }
@@ -387,6 +391,7 @@ main .localisation h2 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 60px;
   }
 }
 
@@ -478,6 +483,11 @@ main .localisation h2 {
   border: none;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1024px) {
+  .btn-news {
+    left: 165px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .btn-news {
     left: 194px;
@@ -493,6 +503,12 @@ main .localisation h2 {
   top: -44px;
   left: 281px;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .btn-like {
+    top: -44px;
+    left: 390px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .btn-like {
@@ -557,6 +573,12 @@ main .localisation h2 {
 .card:hover {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.3);
 }
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 450px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   .card {
     height: auto;
@@ -574,6 +596,11 @@ main .localisation h2 {
      object-fit: cover;
   top: 50px;
   border-radius: 15px 15px 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .card .card-img {
+    widht: 450px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .card .card-img {
