@@ -420,7 +420,7 @@ main .localisation h2 {
   border: none;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .btn-tuto {
     width: 300px;
   }

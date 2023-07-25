@@ -36,7 +36,7 @@
 
   box-shadow: $shadow-function-btn;
 
-  @include tablette {
+  @include desktop {
     width: 300px;
   }
 
