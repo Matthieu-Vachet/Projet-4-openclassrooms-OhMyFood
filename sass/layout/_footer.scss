@@ -13,11 +13,32 @@ footer {
 
   gap: 16px;
 
+  @include desktop-large {
+    @include flex-row-reverse-end;
+
+    height: 114px;
+    gap: 50px;
+  }
+
   h1 {
     @include fontShrikhand400(1.12rem, $white);
+
+    @include desktop-large {
+      padding: 30px 25px 15px 0;
+    }
   }
   li {
     padding-bottom: 7px;
+
+    @include desktop-large {
+      padding-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      @include desktop-large {
+        padding-right: 50px;
+      }
+    }
 
     img {
       padding-right: 10px;
@@ -31,4 +52,14 @@ footer {
 
 .no-icone {
   @include fontRoboto400(1rem, $white);
+}
+
+.footer-liste {
+  @include desktop-large {
+    display: flex;
+    flex-direction: row;
+
+    padding: 30px 25px 15px 180px;
+    gap: 15px;
+  }
 }

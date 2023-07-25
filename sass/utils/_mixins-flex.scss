@@ -35,3 +35,9 @@
   flex-direction: row;
   align-items: center;
 }
+
+@mixin flex-row-reverse-end {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
