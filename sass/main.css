@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+body {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -304,12 +308,25 @@ main .localisation h2 {
   font-family: "Roboto";
   padding: 48px 80px 26px 20px;
 }
+@media screen and (min-width: 1440px) {
+  #restaurant .restaurant-title {
+    padding: 30px 180px 25px 195px;
+  }
+}
 #restaurant .restaurant-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 60px;
   padding-bottom: 66px;
+}
+@media screen and (min-width: 1440px) {
+  #restaurant .restaurant-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .btn-radient {
@@ -395,6 +412,11 @@ main .localisation h2 {
   border: none;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1440px) {
+  .btn-news {
+    left: 194px;
+  }
+}
 
 .btn-like {
   background: none;
@@ -405,6 +427,12 @@ main .localisation h2 {
   top: -44px;
   left: 281px;
   cursor: pointer;
+}
+@media screen and (min-width: 1440px) {
+  .btn-like {
+    top: -44px;
+    left: 430px;
+  }
 }
 .btn-like svg {
   color: #101010;
@@ -463,6 +491,12 @@ main .localisation h2 {
 .card:hover {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.3);
 }
+@media screen and (min-width: 1440px) {
+  .card {
+    height: auto;
+    width: 498px;
+  }
+}
 .card a {
   width: 100%;
   text-decoration: none;
@@ -475,12 +509,22 @@ main .localisation h2 {
   top: 50px;
   border-radius: 15px 15px 0 0;
 }
+@media screen and (min-width: 1440px) {
+  .card .card-img {
+    width: 498px;
+  }
+}
 .card .card-content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 15px 15px;
   margin-left: 13px;
+}
+@media screen and (min-width: 1440px) {
+  .card .card-content {
+    margin-left: 19px;
+  }
 }
 .card .card-content .card-title {
   font-size: 1.12rem;

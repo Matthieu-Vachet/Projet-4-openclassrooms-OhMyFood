@@ -13,6 +13,11 @@
     box-shadow: $shadow-card-hover;
   }
 
+  @include desktop-large {
+    height: auto;
+    width: 498px;
+  }
+
   a {
     width: 100%;
     text-decoration: none;
@@ -24,6 +29,10 @@
     object-fit: cover;
     top: 50px;
     border-radius: 15px 15px 0 0;
+
+    @include desktop-large {
+      width: 498px;
+    }
   }
 
   .card-content {
@@ -32,6 +41,10 @@
 
     border-radius: 0 0 15px 15px;
     margin-left: 13px;
+
+    @include desktop-large {
+      margin-left: 19px;
+    }
 
     .card-title {
       @include fontRoboto700(1.12rem, $black);

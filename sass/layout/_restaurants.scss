@@ -7,14 +7,25 @@
     @include fontRoboto700(1.5rem, $black);
 
     padding: 48px 80px 26px 20px;
+
+    @include desktop-large {
+      padding: 30px 180px 25px 195px;
+    }
   }
 
   .restaurant-list {
     @include flex-column-center;
 
-    gap: 18px;
+    gap: 60px;
 
     padding-bottom: 66px;
+
+    @include desktop-large {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
 
