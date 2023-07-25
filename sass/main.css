@@ -564,6 +564,28 @@ main .localisation h2 {
   fill: url(#gradient4);
 }
 
+.btn-like-menu {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 21px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.btn-like-menu svg {
+  color: #101010;
+  fill: url(#gradient-like-menu);
+  fill-opacity: 0;
+  stroke: #101010;
+  height: 30px;
+  width: 30px;
+}
+.btn-like-menu svg:hover {
+  animation: fill-svg 1s forwards;
+}
+
 .card {
   background: #fff;
   display: flex;
@@ -671,4 +693,26 @@ main .localisation h2 {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding: 32px 17px 40px 17px;
+  position: absolute;
+  top: 300px;
+}
+.menu-title h2 {
+  font-size: 1.75rem;
+  color: #101010;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Shrikhand";
+}
+.menu .btn-like-menu {
+  margin-right: 24px;
 }/*# sourceMappingURL=main.css.map */

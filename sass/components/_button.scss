@@ -150,3 +150,31 @@
 .btn-like-4 svg {
   fill: url(#gradient4);
 }
+
+
+// Boutton Like menu (coeur)
+.btn-like-menu {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 21px;
+
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+
+  svg {
+    color: $black;
+    fill: url(#gradient-like-menu);
+    fill-opacity: 0;
+    stroke: $black;
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+      animation: fill-svg 1s forwards;
+    }
+  }
+
+  }
