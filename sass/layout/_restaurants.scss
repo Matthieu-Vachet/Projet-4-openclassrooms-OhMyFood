@@ -16,9 +16,13 @@
   .restaurant-list {
     @include flex-column-center;
 
-    gap: 60px;
+    gap: 18px;
 
     padding-bottom: 66px;
+
+    @include desktop-large {
+      gap: 60px;
+    }
 
     @include desktop-large {
       display: flex;
