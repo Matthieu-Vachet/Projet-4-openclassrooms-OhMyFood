@@ -569,9 +569,6 @@ main .localisation h2 {
   border: none;
   width: 22px;
   height: 21px;
-  position: relative;
-  top: 0px;
-  left: 0px;
   cursor: pointer;
 }
 .btn-like-menu svg {
