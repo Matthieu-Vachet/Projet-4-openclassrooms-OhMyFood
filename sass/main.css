@@ -304,6 +304,7 @@ main .localisation h2 {
   font-weight: 700;
   font-style: normal;
   font-family: "Roboto";
+  width: 100%;
   padding: 48px 80px 26px 20px;
 }
 @media screen and (min-width: 1440px) {
@@ -321,10 +322,11 @@ main .localisation h2 {
 }
 @media screen and (min-width: 1440px) {
   .tutorial .tuto-liste {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 180px 50px 205px;
+    justify-content: center;
   }
 }
 

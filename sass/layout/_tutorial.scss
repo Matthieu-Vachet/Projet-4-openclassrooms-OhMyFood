@@ -2,12 +2,15 @@
   @include flex-column;
   width: 100%;
 
+
   .tuto-title {
     @include fontRoboto700(1.5rem, $black);
+    width: 100%;
 
     padding: 48px 80px 26px 20px;
 
     @include desktop-large {
+      
       padding: 50px 180px 25px 195px;
     }
   }
@@ -21,8 +24,9 @@
     margin-bottom: 68px;
 
     @include desktop-large {
+      width: 100%;
       @include flex-row-center;
-      margin: 0 180px 50px 205px;
+      justify-content: center;
     }
   }
 }
