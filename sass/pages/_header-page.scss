@@ -1,0 +1,28 @@
+
+.navbar-page {
+    @include flex-align-justify-center;
+    background-color: $white;
+    width: 100%;
+    position: relative;
+
+    .navbar-fleche {
+      flex-shrink: 0;
+      padding: 17px 0 13px 17px;
+
+      .fleche {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .navbar-logo {
+      flex-grow: 1;
+      text-align: center;
+      padding: 20px 0 13px 0;
+
+      .logo {
+        width: 197px;
+        height: 36px;
+      }
+    }
+  }

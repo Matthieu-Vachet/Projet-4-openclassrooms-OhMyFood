@@ -604,7 +604,7 @@ main .localisation h2 {
 }
 @media screen and (min-width: 1024px) {
   .card .card-img {
-    widht: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -638,4 +638,30 @@ main .localisation h2 {
   font-weight: 300;
   font-style: normal;
   font-family: "Roboto";
+}
+
+.navbar-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+.navbar-page .navbar-fleche {
+  flex-shrink: 0;
+  padding: 17px 0 13px 17px;
+}
+.navbar-page .navbar-fleche .fleche {
+  width: 30px;
+  height: 30px;
+}
+.navbar-page .navbar-logo {
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px 0 13px 0;
+}
+.navbar-page .navbar-logo .logo {
+  width: 197px;
+  height: 36px;
 }/*# sourceMappingURL=main.css.map */
