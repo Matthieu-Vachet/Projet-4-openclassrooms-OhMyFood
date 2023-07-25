@@ -2,7 +2,6 @@
   @include flex-column;
   width: 100%;
 
-
   .tuto-title {
     @include fontRoboto700(1.5rem, $black);
     width: 100%;
@@ -10,7 +9,6 @@
     padding: 48px 80px 26px 20px;
 
     @include desktop-large {
-      
       padding: 50px 180px 25px 195px;
     }
   }
