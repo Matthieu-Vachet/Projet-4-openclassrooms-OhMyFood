@@ -704,6 +704,18 @@ main .localisation h2 {
   font-family: "Roboto";
 }
 
+.container-menu h2 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.5s ease forwards;
+}
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .cards-menu {
   opacity: 0;
   transform: translateY(20px);
@@ -921,15 +933,6 @@ main .carte-menu h2 {
   width: 40px;
   padding-bottom: 5px;
   margin-left: 15px;
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slide-in 1.5s ease forwards;
-}
-@keyframes slide-in {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 @media screen and (min-width: 1440px) {
   main .carte-menu h2 {

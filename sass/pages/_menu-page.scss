@@ -126,17 +126,6 @@ main {
     width: 40px;
     padding-bottom: 5px;
     margin-left: 15px;
-
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slide-in 1.5s ease forwards;
-
-    @keyframes slide-in {
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
   
 
     @include desktop-large {
