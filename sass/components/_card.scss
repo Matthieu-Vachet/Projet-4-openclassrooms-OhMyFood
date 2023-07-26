@@ -76,12 +76,16 @@
 
   box-shadow: $shadow-function-btn;
 
+  @include desktop-large {
+    width: 60%;
+  }
+
   &-title{
     width: 100%;
 
     
     h3 {
-      @include fontRoboto500(1.12rem, $black);
+      @include fontRoboto500(1.125rem, $black);
     }
   }
 
@@ -90,11 +94,11 @@
     @include flex-space-between;
     
     p {
-      @include fontRoboto300(0.9rem, $black);
+      @include fontRoboto300(0.940rem, $black);
     }
 
     span {
-      @include fontRoboto700(0.9rem, $black);
+      @include fontRoboto700(0.940rem, $black);
     }
   }
 }

@@ -669,11 +669,16 @@ main .localisation h2 {
   gap: 5px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1440px) {
+  .cards-menu {
+    width: 60%;
+  }
+}
 .cards-menu-title {
   width: 100%;
 }
 .cards-menu-title h3 {
-  font-size: 1.12rem;
+  font-size: 1.125rem;
   color: #101010;
   font-weight: 500;
   font-style: normal;
@@ -685,14 +690,14 @@ main .localisation h2 {
   justify-content: space-between;
 }
 .cards-menu .cards-menu-content p {
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   color: #101010;
   font-weight: 300;
   font-style: normal;
   font-family: "Roboto";
 }
 .cards-menu .cards-menu-content span {
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   color: #101010;
   font-weight: 700;
   font-style: normal;
@@ -725,6 +730,14 @@ main .localisation h2 {
   height: 36px;
 }
 
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .image-menu img {
   width: 100%;
   height: 275px;
@@ -732,7 +745,26 @@ main .localisation h2 {
      object-fit: cover;
   position: relative;
 }
+@media screen and (min-width: 1440px) {
+  .image-menu img {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .image-menu {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+}
 
+@media screen and (min-width: 1440px) {
+  .container-menu {
+    width: 80%;
+  }
+}
 .container-menu .menu {
   display: flex;
   justify-content: space-between;
@@ -742,6 +774,19 @@ main .localisation h2 {
   padding: 32px 17px 40px 17px;
   position: absolute;
   top: 300px;
+}
+@media screen and (min-width: 1440px) {
+  .container-menu .menu {
+    justify-content: center;
+    width: 80%;
+    top: 425px;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container-menu .menu-title {
+    padding-top: 30px;
+  }
 }
 .container-menu .menu-title h2 {
   font-size: 1.75rem;
@@ -753,6 +798,11 @@ main .localisation h2 {
 .container-menu .menu .btn-like-menu {
   margin-right: 24px;
 }
+@media screen and (min-width: 1440px) {
+  .container-menu .menu .btn-like-menu {
+    padding-top: 30px;
+  }
+}
 
 .carte-menu {
   background-color: #f6f6f6;
@@ -760,6 +810,12 @@ main .localisation h2 {
   flex-direction: column;
   padding-top: 50px;
   gap: 12px;
+}
+@media screen and (min-width: 1440px) {
+  .carte-menu {
+    width: 100%;
+    padding-top: 100px;
+  }
 }
 .carte-menu h2 {
   font-size: 1rem;
@@ -773,6 +829,11 @@ main .localisation h2 {
   padding-bottom: 5px;
   margin-left: 15px;
 }
+@media screen and (min-width: 1440px) {
+  .carte-menu h2 {
+    margin-left: 20%;
+  }
+}
 .carte-menu .menu-list {
   background-color: #f6f6f6;
   display: flex;
@@ -785,5 +846,6 @@ main .localisation h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f6f6f6;
   padding: 40px 0;
 }/*# sourceMappingURL=main.css.map */
