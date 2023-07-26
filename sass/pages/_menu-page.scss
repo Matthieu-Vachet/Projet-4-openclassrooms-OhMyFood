@@ -51,4 +51,11 @@
     @include flex-column-center;
     gap: 15px;
   }
+
+}
+
+.btn-menu {
+  @include flex-align-justify-center;
+
+  padding: 40px 0;
 }
