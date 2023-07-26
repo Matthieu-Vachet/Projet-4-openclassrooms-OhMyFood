@@ -730,6 +730,13 @@ main .localisation h2 {
   height: 36px;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   main {
     display: flex;
@@ -737,35 +744,52 @@ main .localisation h2 {
     align-items: center;
   }
 }
-
-.image-menu img {
+main .image-menu img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  main .image-menu img {
+    width: 100%;
+    height: 275px;
+  }
+}
 @media screen and (min-width: 1440px) {
-  .image-menu img {
+  main .image-menu img {
     width: 100%;
     height: 400px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .image-menu {
+@media screen and (min-width: 768px) {
+  main .image-menu {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
   }
 }
-
 @media screen and (min-width: 1440px) {
-  .container-menu {
+  main .image-menu {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .container-menu {
     width: 80%;
   }
 }
-.container-menu .menu {
+@media screen and (min-width: 1440px) {
+  main .container-menu {
+    width: 80%;
+  }
+}
+main .container-menu .menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -775,49 +799,66 @@ main .localisation h2 {
   position: absolute;
   top: 300px;
 }
+@media screen and (min-width: 768px) {
+  main .container-menu .menu {
+    justify-content: center;
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1440px) {
-  .container-menu .menu {
+  main .container-menu .menu {
     justify-content: center;
     width: 80%;
     top: 425px;
     gap: 24px;
   }
 }
+@media screen and (min-width: 768px) {
+  main .container-menu .menu-title {
+    padding-top: 30px;
+    margin-right: 20px;
+  }
+}
 @media screen and (min-width: 1440px) {
-  .container-menu .menu-title {
+  main .container-menu .menu-title {
     padding-top: 30px;
   }
 }
-.container-menu .menu-title h2 {
+main .container-menu .menu-title h2 {
   font-size: 1.75rem;
   color: #101010;
   font-weight: 400;
   font-style: normal;
   font-family: "Shrikhand";
 }
-.container-menu .menu .btn-like-menu {
+main .container-menu .menu .btn-like-menu {
   margin-right: 24px;
 }
-@media screen and (min-width: 1440px) {
-  .container-menu .menu .btn-like-menu {
-    padding-top: 30px;
+@media screen and (min-width: 768px) {
+  main .container-menu .menu .btn-like-menu {
+    margin-top: 30px;
   }
 }
-
-.carte-menu {
+main .carte-menu {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
   gap: 12px;
 }
-@media screen and (min-width: 1440px) {
-  .carte-menu {
+@media screen and (min-width: 768px) {
+  main .carte-menu {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
-.carte-menu h2 {
+@media screen and (min-width: 1440px) {
+  main .carte-menu {
+    width: 100%;
+    padding-top: 85px;
+  }
+}
+main .carte-menu h2 {
   font-size: 1rem;
   color: #101010;
   font-weight: 300;
@@ -830,19 +871,18 @@ main .localisation h2 {
   margin-left: 15px;
 }
 @media screen and (min-width: 1440px) {
-  .carte-menu h2 {
+  main .carte-menu h2 {
     margin-left: 20%;
   }
 }
-.carte-menu .menu-list {
+main .carte-menu .menu-list {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-
-.btn-menu {
+main .btn-menu {
   display: flex;
   align-items: center;
   justify-content: center;
