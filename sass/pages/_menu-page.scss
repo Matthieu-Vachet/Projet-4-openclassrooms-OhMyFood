@@ -7,8 +7,7 @@
   }
 }
 
-.container {
-
+.container-menu {
   .menu {
     @include flex-space-between;
     width: 100%;
@@ -32,11 +31,11 @@
   }
 }
 
-.entree-menu {
+.carte-menu {
   background-color: $background;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   padding-top: 50px;
+  gap: 12px;
 
   h2 {
     @include fontRoboto300(1rem, $black);
@@ -44,12 +43,12 @@
     border-bottom: 3px solid $green;
     width: 40px;
     padding-bottom: 5px;
+    margin-left: 15px;
   }
 
   .menu-list {
     background-color: $background;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
+    gap: 15px;
   }
 }

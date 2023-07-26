@@ -660,16 +660,41 @@ main .localisation h2 {
 }
 
 .cards-menu {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
-  width: 349px;
-  height: 69px;
+  width: 94%;
   border-radius: 15px;
+  padding: 15px;
+  gap: 5px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.cards-menu h3 {
+.cards-menu-title {
+  width: 100%;
+}
+.cards-menu-title h3 {
   font-size: 1.12rem;
   color: #101010;
   font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto";
+}
+.cards-menu .cards-menu-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cards-menu .cards-menu-content p {
+  font-size: 0.9rem;
+  color: #101010;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Roboto";
+}
+.cards-menu .cards-menu-content span {
+  font-size: 0.9rem;
+  color: #101010;
+  font-weight: 700;
   font-style: normal;
   font-family: "Roboto";
 }
@@ -708,7 +733,7 @@ main .localisation h2 {
   position: relative;
 }
 
-.container .menu {
+.container-menu .menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -718,24 +743,25 @@ main .localisation h2 {
   position: absolute;
   top: 300px;
 }
-.container .menu-title h2 {
+.container-menu .menu-title h2 {
   font-size: 1.75rem;
   color: #101010;
   font-weight: 400;
   font-style: normal;
   font-family: "Shrikhand";
 }
-.container .menu .btn-like-menu {
+.container-menu .menu .btn-like-menu {
   margin-right: 24px;
 }
 
-.entree-menu {
+.carte-menu {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  gap: 12px;
 }
-.entree-menu h2 {
+.carte-menu h2 {
   font-size: 1rem;
   color: #101010;
   font-weight: 300;
@@ -745,10 +771,12 @@ main .localisation h2 {
   border-bottom: 3px solid #99e2d0;
   width: 40px;
   padding-bottom: 5px;
+  margin-left: 15px;
 }
-.entree-menu .menu-list {
+.carte-menu .menu-list {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */

@@ -67,14 +67,34 @@
 }
 
 .cards-menu {
+  @include flex-column;
   background-color: $white;
-  width: 349px;
-  height: 69px;
+  width: 94%;
   border-radius: 15px;
+  padding: 15px;
+  gap: 5px;
 
   box-shadow: $shadow-function-btn;
 
-  h3 {
-    @include fontRoboto500(1.12rem, $black);
+  &-title{
+    width: 100%;
+
+    
+    h3 {
+      @include fontRoboto500(1.12rem, $black);
+    }
+  }
+
+  .cards-menu-content {
+    width: 100%;
+    @include flex-space-between;
+    
+    p {
+      @include fontRoboto300(0.9rem, $black);
+    }
+
+    span {
+      @include fontRoboto700(0.9rem, $black);
+    }
   }
 }
