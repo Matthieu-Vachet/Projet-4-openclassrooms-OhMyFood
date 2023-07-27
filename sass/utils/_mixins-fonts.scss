@@ -75,3 +75,12 @@
   font-style: $style;
   font-family: $family;
 }
+
+@mixin fontShrikhandloader($size, $color1: $primary, $color2: $secondaire) {
+  background: linear-gradient(to right, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: $size;
+}
