@@ -16,3 +16,21 @@
     }
   }
 }
+
+@mixin slide-title {
+  @keyframes slide-title {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@mixin slide-cards-menu {
+  @keyframes slide-cards-menu {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
