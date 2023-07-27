@@ -661,42 +661,63 @@ main .localisation h2 {
 
 .cards-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
   background-color: #fff;
   width: 94%;
+  height: 69px;
   border-radius: 15px;
-  padding: 15px;
-  gap: 5px;
+  position: relative;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.cards-menu:hover .check-menu {
+  margin-right: 0px;
 }
 @media screen and (min-width: 1440px) {
   .cards-menu {
     width: 60%;
   }
 }
-.cards-menu-title {
+.cards-menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px 12px 15px;
+  gap: 5px;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.cards-menu-title h3 {
+.cards-menu-content .cards-menu-title {
   font-size: 1.125rem;
   color: #101010;
   font-weight: 500;
   font-style: normal;
   font-family: "Roboto";
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 85%;
 }
-.cards-menu .cards-menu-content {
+.cards-menu .cards-menu-texte {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.cards-menu .cards-menu-content p {
+.cards-menu .cards-menu-texte p {
   font-size: 0.94rem;
   color: #101010;
   font-weight: 300;
   font-style: normal;
   font-family: "Roboto";
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 90%;
 }
-.cards-menu .cards-menu-content span {
+.cards-menu .cards-menu-texte span {
   font-size: 0.94rem;
   color: #101010;
   font-weight: 700;
@@ -704,12 +725,39 @@ main .localisation h2 {
   font-family: "Roboto";
 }
 
+.check-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69px;
+  height: 69px;
+  background: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -70px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.check-menu i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #99e2d0;
+  transition: transform 0.4s ease-out;
+}
+.check-menu:hover i {
+  transform: rotate(360deg);
+}
+
 .container-menu h2 {
   opacity: 0;
   transform: translateX(-100%);
-  animation: slide-in 1.5s ease forwards;
+  animation: slide-title 1.5s ease forwards;
 }
-@keyframes slide-in {
+@keyframes slide-title {
   to {
     opacity: 1;
     transform: translateX(0);
@@ -719,55 +767,55 @@ main .localisation h2 {
 .cards-menu {
   opacity: 0;
   transform: translateY(20px);
-  animation: slide-up 0.5s ease forwards;
+  animation: slide-cards-menu 0.5s ease forwards;
 }
-
-.n-1 {
-  animation-delay: 0s;
-}
-
-.n-2 {
-  animation-delay: 0.5s;
-}
-
-.n-3 {
-  animation-delay: 1s;
-}
-
-.n-4 {
-  animation-delay: 1.5s;
-}
-
-.n-5 {
-  animation-delay: 2s;
-}
-
-.n-6 {
-  animation-delay: 2.5s;
-}
-
-.n-7 {
-  animation-delay: 3s;
-}
-
-.n-8 {
-  animation-delay: 3.5s;
-}
-
-.n-9 {
-  animation-delay: 4s;
-}
-
-.n-10 {
-  animation-delay: 4.5s;
-}
-
-@keyframes slide-up {
+@keyframes slide-cards-menu {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+.n-1 {
+  animation-delay: 0.5s;
+}
+
+.n-2 {
+  animation-delay: 1s;
+}
+
+.n-3 {
+  animation-delay: 1.5s;
+}
+
+.n-4 {
+  animation-delay: 2s;
+}
+
+.n-5 {
+  animation-delay: 2.5s;
+}
+
+.n-6 {
+  animation-delay: 3s;
+}
+
+.n-7 {
+  animation-delay: 3.5s;
+}
+
+.n-8 {
+  animation-delay: 4s;
+}
+
+.n-9 {
+  animation-delay: 4.5s;
+}
+
+.n-10 {
+  animation-delay: 5s;
+}
+
 .navbar-page {
   display: flex;
   align-items: center;
@@ -783,6 +831,10 @@ main .localisation h2 {
 .navbar-page .navbar-fleche .fleche {
   width: 30px;
   height: 30px;
+  transition: transform 0.4s;
+}
+.navbar-page .navbar-fleche .fleche:hover {
+  transform: scale(1.5);
 }
 .navbar-page .navbar-logo {
   flex-grow: 1;

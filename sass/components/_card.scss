@@ -67,38 +67,84 @@
 }
 
 .cards-menu {
-  @include flex-column;
+  @include flex-row;
+  justify-content: space-between;
+  overflow: hidden;
   background-color: $white;
   width: 94%;
+  height: 69px;
   border-radius: 15px;
-  padding: 15px;
-  gap: 5px;
-
+  position: relative;
   box-shadow: $shadow-function-btn;
+
+
+  &:hover .check-menu {
+    margin-right: 0px;
+  }
 
   @include desktop-large {
     width: 60%;
   }
 
-  &-title{
+  &-content {
+    @include flex-column;
+    padding: 12px 16px 12px 15px;
+    gap: 5px;
     width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
-    
-    h3 {
+    .cards-menu-title {
       @include fontRoboto500(1.125rem, $black);
+      margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 85%;
     }
   }
 
-  .cards-menu-content {
+  .cards-menu-texte {
     width: 100%;
     @include flex-space-between;
-    
+
     p {
-      @include fontRoboto300(0.940rem, $black);
+      @include fontRoboto300(0.94rem, $black);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 90%;
     }
 
     span {
-      @include fontRoboto700(0.940rem, $black);
+      @include fontRoboto700(0.94rem, $black);
     }
+  }
+}
+
+.check-menu {
+  @include flex-align-justify-center;
+  width: 69px;
+  height: 69px;
+  background: $green;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -70px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+
+
+  & i {
+    @include flex-align-justify-center;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: $green;
+    transition: transform 0.4s ease-out;
+  }
+
+  &:hover i {
+    transform: rotate(360deg);
   }
 }
