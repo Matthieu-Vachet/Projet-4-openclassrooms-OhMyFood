@@ -2,7 +2,8 @@
 
 // 1. Configuration et aides
 @import "./utils/variables", "./utils/mixins-fonts", "./utils/mixins-flex",
-  "./utils/mixins-gradient", "./utils/mixins-animations", "./utils/mixins-breakpoint";
+  "./utils/mixins-gradient", "./utils/mixins-animations",
+  "./utils/mixins-breakpoint";
 // 3. Trucs de base
 @import "./base/base", "./base/fonts", "./base/reset";
 
@@ -11,7 +12,8 @@
   "./layout/explore", "./layout/tutorial", "./layout/restaurants";
 
 // 5. Composants
-@import "./components/button", "./components/card", "./components/animation-cards-menu";
+@import "./components/button", "./components/card",
+  "./components/animation-cards-menu";
 
 // 6. Styles spécifiques à la page
 @import "./pages/header-page", "./pages/menu-page";

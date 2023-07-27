@@ -1,151 +1,138 @@
 main {
-
   @include tablette {
     @include flex-column-center;
   }
-  
+
   @include desktop-large {
     @include flex-column-center;
   }
 
-
-.image-menu {
-  img {
-    width: 100%;
-    height: 275px;
-    object-fit: cover;
-    position: relative;
-
-    @include tablette {
+  .image-menu {
+    img {
       width: 100%;
       height: 275px;
-    }
-
-    @include desktop-large {
-      width: 100%;
-      height: 400px;
-      
-    }
-  }
-
-  @include tablette {
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-  }
-
-@include desktop-large {
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  
-}
-}
-
-.container-menu {
-
-  @include tablette {
-    width: 80%;
-  }
-
-  @include desktop-large {
-    width: 80%;
-  }
-  .menu {
-    @include flex-space-between;
-    width: 100%;
-    background-color: $background;
-
-    border-radius: 40px 40px 0 0;
-    padding: 32px 17px 40px 17px;
-
-    position: absolute;
-    top: 300px;
-
-    @include tablette {
-      justify-content: center;
-      width: 80%;
-    }
-
-    @include desktop-large {
-      justify-content: center;
-      width: 80%;
-      top: 425px;
-      gap: 24px
-    }
-
-    
-
-    &-title {
+      object-fit: cover;
+      position: relative;
 
       @include tablette {
-        padding-top: 30px;
-        margin-right: 20px;
+        width: 100%;
+        height: 275px;
       }
 
       @include desktop-large {
-        padding-top: 30px;
-      }
-      h2 {
-        @include fontShrikhand400(1.75rem, $black);
-        
+        width: 100%;
+        height: 400px;
       }
     }
 
-    .btn-like-menu {
-      margin-right: 24px;
-
-      @include tablette {
-        margin-top: 30px;
-      }
+    @include tablette {
+      width: 100%;
+      object-fit: cover;
+      position: relative;
     }
-  }
-}
-
-.carte-menu {
-  background-color: $background;
-  @include flex-column;
-  padding-top: 50px;
-  gap: 12px;
-
-  @include tablette {
-    width: 100%;
-    padding-top: 80px;
-  }
-
-  @include desktop-large {
-    width: 100%;
-    padding-top: 85px;
-  
-  }
-
-  h2 {
-    @include fontRoboto300(1rem, $black);
-    text-transform: uppercase;
-    border-bottom: 3px solid $green;
-    width: 40px;
-    padding-bottom: 5px;
-    margin-left: 15px;
-  
 
     @include desktop-large {
-      margin-left: 20%;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
     }
   }
 
-  .menu-list {
+  .container-menu {
+    @include tablette {
+      width: 80%;
+    }
+
+    @include desktop-large {
+      width: 80%;
+    }
+    .menu {
+      @include flex-space-between;
+      width: 100%;
+      background-color: $background;
+
+      border-radius: 40px 40px 0 0;
+      padding: 32px 17px 40px 17px;
+
+      position: absolute;
+      top: 300px;
+
+      @include tablette {
+        justify-content: center;
+        width: 80%;
+      }
+
+      @include desktop-large {
+        justify-content: center;
+        width: 80%;
+        top: 425px;
+        gap: 24px;
+      }
+
+      &-title {
+        @include tablette {
+          padding-top: 30px;
+          margin-right: 20px;
+        }
+
+        @include desktop-large {
+          padding-top: 30px;
+        }
+        h2 {
+          @include fontShrikhand400(1.75rem, $black);
+        }
+      }
+
+      .btn-like-menu {
+        margin-right: 24px;
+
+        @include tablette {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .carte-menu {
     background-color: $background;
-    @include flex-column-center;
-    gap: 15px;
+    @include flex-column;
+    padding-top: 50px;
+    gap: 12px;
+
+    @include tablette {
+      width: 100%;
+      padding-top: 80px;
+    }
+
+    @include desktop-large {
+      width: 100%;
+      padding-top: 85px;
+    }
+
+    h2 {
+      @include fontRoboto300(1rem, $black);
+      text-transform: uppercase;
+      border-bottom: 3px solid $green;
+      width: 40px;
+      padding-bottom: 5px;
+      margin-left: 15px;
+
+      @include desktop-large {
+        margin-left: 20%;
+      }
+    }
+
+    .menu-list {
+      background-color: $background;
+      @include flex-column-center;
+      gap: 15px;
+    }
+  }
+
+  .btn-menu {
+    @include flex-align-justify-center;
+    background-color: $background;
+
+    padding: 40px 0;
   }
 }
-
-.btn-menu {
-  @include flex-align-justify-center;
-  background-color: $background;
-
-  padding: 40px 0;
-}
-} 
-
-

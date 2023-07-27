@@ -112,7 +112,6 @@
   @include desktop {
     top: -44px;
     left: 390px;
-
   }
 
   @include desktop-large {
@@ -151,7 +150,6 @@
   fill: url(#gradient4);
 }
 
-
 // Boutton Like menu (coeur)
 .btn-like-menu {
   background: none;
@@ -172,5 +170,4 @@
       animation: fill-svg 1s forwards;
     }
   }
-
-  }
+}
