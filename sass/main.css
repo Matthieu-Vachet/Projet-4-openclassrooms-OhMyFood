@@ -411,7 +411,6 @@ main .localisation h2 {
   background-color: #eaeaea;
   animation: time 1s 4s forwards linear;
 }
-
 @keyframes time {
   0% {
     transform: scale(1);
@@ -429,13 +428,12 @@ main .localisation h2 {
     background-color: rgba(179, 177, 177, 0);
   }
 }
-.loader {
+.loader-container .loader {
   position: fixed;
   width: 200px;
   height: 200px;
 }
-
-.loader::before {
+.loader-container .loader::before {
   content: "";
   position: absolute;
   top: 85px;
@@ -447,8 +445,7 @@ main .localisation h2 {
   border-radius: 50%;
   animation: rotate-loader 4s linear infinite;
 }
-
-.loader::after {
+.loader-container .loader::after {
   content: "";
   position: absolute;
   top: -40px;
@@ -460,7 +457,6 @@ main .localisation h2 {
   border-radius: 50%;
   animation: rotate-loader 4s linear infinite;
 }
-
 @keyframes rotate-loader {
   0% {
     filter: blur(50px) hue-rotate(0deg);
@@ -469,7 +465,7 @@ main .localisation h2 {
     filter: blur(50px) hue-rotate(360deg);
   }
 }
-.loader .color {
+.loader-container .loader .color {
   position: absolute;
   top: 0;
   left: 0;
@@ -482,8 +478,7 @@ main .localisation h2 {
   align-items: center;
   justify-content: center;
 }
-
-.loader .color::before {
+.loader-container .loader .color::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -494,8 +489,7 @@ main .localisation h2 {
   border-radius: 50%;
   box-shadow: inset 0 0 20px #ff79da;
 }
-
-.loader h2 {
+.loader-container .loader .color h2 {
   position: relative;
   font-size: 24px;
   color: #f6f6f6;
@@ -504,8 +498,7 @@ main .localisation h2 {
   font-family: "Shrikhand";
   text-transform: uppercase;
 }
-
-.loader h2::before {
+.loader-container .loader .color h2::before {
   content: attr(data-text);
   position: absolute;
   background: linear-gradient(to right, #9356dc, #ff79da);
@@ -519,7 +512,6 @@ main .localisation h2 {
   border-right: 4px solid #353535;
   animation: animate-text 5s linear infinite;
 }
-
 @keyframes animate-text {
   0%, 10%, 100% {
     width: 0;
@@ -528,7 +520,7 @@ main .localisation h2 {
     width: 100%;
   }
 }
-.loader i {
+.loader-container .loader i {
   position: relative;
   z-index: 3;
   top: 138px;
@@ -536,7 +528,6 @@ main .localisation h2 {
   color: #9356dc;
   animation: spin-icone 4s;
 }
-
 @keyframes spin-icone {
   0% {
     transform: rotate(0deg);
@@ -569,6 +560,7 @@ main .localisation h2 {
     transform: scale(1);
   }
 }
+
 .btn-radient {
   font-size: 1rem;
   color: #fff;
