@@ -819,6 +819,12 @@ main .localisation h2 {
   font-style: normal;
   font-family: "Roboto";
 }
+.card:nth-last-child(-n+2) .btn-news {
+  display: none;
+}
+.card:nth-last-child(-n+2) .card-title {
+  padding-top: 29px;
+}
 
 .cards-menu {
   display: flex;

@@ -64,6 +64,13 @@
       @include fontRoboto300(1.06rem, $black);
     }
   }
+  &:nth-last-child(-n+2) .btn-news {
+    display: none;
+  }
+
+  &:nth-last-child(-n+2) .card-title {
+    padding-top: 29px;
+  }
 }
 
 .cards-menu {
