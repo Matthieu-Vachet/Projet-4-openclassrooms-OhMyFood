@@ -1,21 +1,29 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous les Mxins liés aux breackpoints responsive.
+// -----------------------------------------------------------------------------
+
+// 768 pixels //
 @mixin tablette {
   @media screen and (min-width: map-get($breakpoint, tablette)) {
     @content;
   }
 }
 
+// 1024 pixels //
 @mixin desktop {
   @media screen and (min-width: map-get($breakpoint, desktop)) {
     @content;
   }
 }
 
+// 1240 pixels //
 @mixin desktop-medium {
   @media screen and (min-width: map-get($breakpoint, desktop-medium)) {
     @content;
   }
 }
 
+// 1440 pixels //
 @mixin desktop-large {
   @media screen and (min-width: map-get($breakpoint, desktop-large)) {
     @content;

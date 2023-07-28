@@ -1,3 +1,8 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous les Mixins liés aux boutton gradient.
+// -----------------------------------------------------------------------------
+
+
 @mixin button-gradient {
   background: linear-gradient(to top, $primary 0%, $secondaire 100%);
 }

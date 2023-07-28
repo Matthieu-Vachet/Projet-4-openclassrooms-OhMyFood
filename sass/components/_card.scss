@@ -1,3 +1,8 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous le scss des differentes Cards du site.
+// -----------------------------------------------------------------------------
+
+// Cards de la pahe Home //
 .card {
   background: $white;
   @include flex-column-center;
@@ -64,15 +69,16 @@
       @include fontRoboto300(1.06rem, $black);
     }
   }
-  &:nth-last-child(-n+2) .btn-news {
+  &:nth-last-child(-n + 2) .btn-news {
     display: none;
   }
 
-  &:nth-last-child(-n+2) .card-title {
+  &:nth-last-child(-n + 2) .card-title {
     padding-top: 29px;
   }
 }
 
+// Cards du menu des pages restaurants //
 .cards-menu {
   @include flex-row;
   justify-content: space-between;
@@ -127,29 +133,30 @@
       @include fontRoboto700(0.94rem, $black);
     }
   }
-}
 
-.check-menu {
-  @include flex-align-justify-center;
-  width: 69px;
-  height: 69px;
-  background: $green;
-  border-radius: 0px 15px 15px 0px;
-  margin-right: -70px;
-  cursor: pointer;
-  transition: all 0.4s ease-out;
-
-  & i {
+  //SCSS bouton check cards menu //
+  .check-menu {
     @include flex-align-justify-center;
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    color: $green;
-    transition: transform 0.4s ease-out;
-  }
+    width: 69px;
+    height: 69px;
+    background: $green;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: -70px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
 
-  &:hover i {
-    transform: rotate(360deg);
+    & i {
+      @include flex-align-justify-center;
+      background-color: #ffffff;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      color: $green;
+      transition: transform 0.4s ease-out;
+    }
+
+    &:hover i {
+      transform: rotate(360deg);
+    }
   }
 }

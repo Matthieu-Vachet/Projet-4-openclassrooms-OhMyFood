@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------------------
-// Ce fichier contient tous les mixins Sass.
+// Ce fichier contient tous les mixins fonts.
 // -----------------------------------------------------------------------------
 
-//Fonts ROBOTO
+//Fonts ROBOTO //
 
 @mixin fontRoboto300(
   $size,
@@ -60,7 +60,7 @@
   font-family: $family;
 }
 
-//Fonts SHRIKHAND
+//Fonts SHRIKHAND //
 
 @mixin fontShrikhand400(
   $size,

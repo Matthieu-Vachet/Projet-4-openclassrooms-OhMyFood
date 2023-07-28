@@ -1,3 +1,10 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous le SCSS liés aux animations des pages restaurants.
+// -----------------------------------------------------------------------------
+
+
+
+// Animation apparition titre du menu //
 .container-menu {
   h2 {
     opacity: 0;
@@ -8,6 +15,8 @@
   }
 }
 
+
+// Animation apparition des cards du menu //
 .cards-menu {
   opacity: 0;
   transform: translateY(20px);

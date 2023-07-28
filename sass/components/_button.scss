@@ -2,8 +2,8 @@
 // Ce fichier contient tous les styles liés au composant de bouton.
 // -----------------------------------------------------------------------------
 
-// button Couleur Radient
 
+// Boutton Couleur Radient //
 .btn-radient {
   @include fontRoboto500(1rem, $white);
   @include button-gradient;
@@ -22,8 +22,8 @@
   }
 }
 
-// Card fonctionnement
 
+// Boutton de la section fonctionnement //
 .btn-tuto {
   background: $background;
   width: 322px;
@@ -71,7 +71,7 @@
   }
 }
 
-// Button News
+// Boutton nouveau cards page home //
 .btn-news {
   @include fontRoboto500(0.87rem, $green-font);
   @include flex-align-justify-center;
@@ -97,7 +97,7 @@
   }
 }
 
-// Boutton Like (coeur)
+// Boutton Like (coeur) //
 .btn-like {
   background: none;
   border: none;
@@ -150,7 +150,7 @@
   fill: url(#gradient4);
 }
 
-// Boutton Like menu (coeur)
+// Boutton Like du menu des pages restaurants //
 .btn-like-menu {
   background: none;
   border: none;
